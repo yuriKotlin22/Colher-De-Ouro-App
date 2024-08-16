@@ -18,13 +18,12 @@ class CakesItem (private val cakes: Cakes) : Item<CakesItem.CakesViewHolder>() {
 
     override fun bind(viewHolder: CakesViewHolder, position: Int) {
 
-        viewHolder.itemView.findViewById<LinearLayout>(R.id.container_cake).setBackgroundColor(cakes.bgColor.toInt())
-        viewHolder.itemView.findViewById<TextView>(R.id.txt_cake).text = cakes.name
+        viewHolder.itemView.findViewById<LinearLayout>(R.id.container_item).setBackgroundColor(cakes.bgColor.toInt())
+        viewHolder.itemView.findViewById<TextView>(R.id.txt_item).text = cakes.name
     }
 
     override fun getLayout(): Int {
         return R.layout.item_list_cakes
     }
-
 
 }

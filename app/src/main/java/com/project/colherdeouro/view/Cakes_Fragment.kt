@@ -25,19 +25,18 @@ class Cakes_Fragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val rvCakes = view.findViewById<RecyclerView>(R.id.rv_cakes)
+        val rvCakes = view.findViewById<RecyclerView>(R.id.rv_itens)
         rvCakes.layoutManager = LinearLayoutManager(requireContext())
 
         val adapter = GroupieAdapter()
         rvCakes.adapter = adapter
 
+
         adapter.add(CakesItem(Cakes("Chocolate", 0xFFa9550c)))
-        adapter.add(CakesItem(Cakes("Fubá", 0xFFffd34e)))
-        adapter.add((CakesItem(Cakes("Coco", 0xFFFdceae))))
         adapter.add(CakesItem(Cakes("Morango", 0XFFce4448)))
         adapter.add(CakesItem(Cakes("Cenoura", 0xFFFF5722)))
         adapter.add(CakesItem(Cakes("Milho Verde", 0xFFa8c545)))
-
+        adapter.add((CakesItem(Cakes("Coco", 0xFFFdceae))))
 
         adapter.notifyDataSetChanged()
     }
