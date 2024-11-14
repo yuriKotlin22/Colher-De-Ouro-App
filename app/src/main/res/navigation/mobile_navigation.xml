@@ -14,7 +14,7 @@
     <fragment
         android:id="@+id/nav_dishes"
         android:label="@string/dishes"
-        android:name="com.project.colherdeouro.Dishes_Fragment"
+        android:name="com.project.colherdeouro.view.Dishes_Fragment"
         tools:layout="@layout/fragment_dishes"/>
 
     <fragment

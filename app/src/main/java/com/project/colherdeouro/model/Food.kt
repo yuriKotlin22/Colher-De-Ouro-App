@@ -1,6 +1,6 @@
 package com.project.colherdeouro.model
 
-data class Cakes(
+data class Food(
     val name: String,
     val bgColor: Long
 )

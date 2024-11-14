@@ -1,14 +1,13 @@
-package com.project.colherdeouro.view
+package com.project.colherdeouro
 
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.project.colherdeouro.R
-import com.project.colherdeouro.model.Cakes
+import com.project.colherdeouro.model.Food
 import com.xwray.groupie.GroupieViewHolder
 import com.xwray.groupie.Item
 
-class CakesItem (private val cakes: Cakes) : Item<CakesItem.CakesViewHolder>() {
+class DishesItem (private val dishes: Food) : Item<DishesItem.CakesViewHolder>() {
 
     class CakesViewHolder(view: View) : GroupieViewHolder(view)
 
@@ -18,8 +17,8 @@ class CakesItem (private val cakes: Cakes) : Item<CakesItem.CakesViewHolder>() {
 
     override fun bind(viewHolder: CakesViewHolder, position: Int) {
 
-        viewHolder.itemView.findViewById<LinearLayout>(R.id.container_item).setBackgroundColor(cakes.bgColor.toInt())
-        viewHolder.itemView.findViewById<TextView>(R.id.txt_item).text = cakes.name
+//        viewHolder.itemView.findViewById<LinearLayout>(R.id.container_item).setBackgroundColor(dishes.bgColor.toInt())
+        viewHolder.itemView.findViewById<TextView>(R.id.txt_item).text = dishes.name
     }
 
     override fun getLayout(): Int {
